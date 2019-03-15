@@ -2,25 +2,38 @@ import React from 'react';
 import Modal from '../Modal';
 import history from '../../history';
 
-const StreamDelete = () => {
-  const actions = (
-    <React.Fragment>
-      <button className="ui button negative">Delete</button>
-      <button className="ui button">Cancel</button>
-    </React.Fragment>
-  );
+class StreamDelete extends React.Component {
+  renderActions() {
+    return (
+      <React.Fragment>
+        <button onSubmit={this.onSubmit} className="ui button negative">
+          Delete
+        </button>
+        <button className="ui button">Cancel</button>
+      </React.Fragment>
+    );
+  }
 
-  return (
-    <div>
-      StreamDelete
+  renderContent() {
+    if (!this.props.stream) {
+      return 'Are you sure you want to delete this stream?';
+    }
+
+    return `Are you sure you want to delete this stream with title: ${
+      this.props.stream.title
+    }?`;
+  }
+
+  render() {
+    return (
       <Modal
         title="Delete Stream"
-        content="Are you sure you want to delete this stream?"
-        actions={actions}
+        content={this.renderContent()}
+        actions={this.renderActions()}
         onDismiss={() => history.push('/')}
       />
-    </div>
-  );
-};
+    );
+  }
+}
 
 export default StreamDelete;
