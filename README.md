@@ -8,7 +8,7 @@ Before you begin cloning make sure your computer has [git](https://git-scm.com/b
 
 To clone the repo locally onto your computer, open the terminal then type in:
 
-```git
+```bash
 $ git clone https://github.com/helenyau0/Streamer.git
 # downloads the project
 $ cd streamer
@@ -19,7 +19,7 @@ Now that you've cloned the repo locally, you will need to start up all 3 servers
 
 Inside streamer directory navigate to client:
 
-```git
+```bash
 $ cd client
 # changes directory to client folder
 $ npm install
@@ -30,7 +30,7 @@ $ npm start
 
 Now open another terminal window and change into streamer directory. From here navigate to api directory:
 
-```git
+```bash
 $ cd api
 # changes directory to api folder
 $ npm install
@@ -41,7 +41,7 @@ $ npm start
 
 Now in the third terminal window, again from the streamer directory, navigate into the rtmpserver directory:
 
-```git
+```bash
 $ cd rtmpserver
 # changes directory to rtmpserver folder
 $ npm install
