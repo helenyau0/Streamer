@@ -8,7 +8,7 @@ Before you begin cloning make sure your computer has [git](https://git-scm.com/b
 
 To clone the repo locally onto your computer, open the terminal then type in:
 
-```
+```git
 $ git clone https://github.com/helenyau0/Streamer.git
 # downloads the project
 $ cd streamer
@@ -19,7 +19,7 @@ Now that you've cloned the repo locally, you will need to start up all 3 servers
 
 Inside streamer directory navigate to client:
 
-```
+```git
 $ cd client
 # changes directory to client folder
 $ npm install
@@ -30,7 +30,7 @@ $ npm start
 
 Now open another terminal window and change into streamer directory. From here navigate to api directory:
 
-```
+```git
 $ cd api
 # changes directory to api folder
 $ npm install
@@ -41,7 +41,7 @@ $ npm start
 
 Now in the third terminal window, again from the streamer directory, navigate into the rtmpserver directory:
 
-```
+```git
 $ cd rtmpserver
 # changes directory to rtmpserver folder
 $ npm install
@@ -55,6 +55,7 @@ Congratulations! Streamer is now up and running! To start using, navigate to htt
 Once you've logged in you are now authorized to create live streams.
 
 After creating a stream, navigate to your newly created stream:
+
 ![](client/public/images/config.png)
 
 Next open up OBS and configure your stream settings to have the following:
